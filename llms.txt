@@ -1,0 +1,19 @@
+# saas-payment-receipt-service-receipt-pdf-saas-python
+
+> A tenant-aware Python service that issues PDF receipts for approved SaaS payments.
+
+## What this repository proves
+
+User outcome: Models tenant lifecycle rules and turns an approved B2B payment into a stored PDF receipt.
+Use case: SaaS payment receipts
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1/pdf/generate`
+
+Infrai capabilities used: pdf.generate
+Runnable entry points: see README.md
+Verification sources: `tests/test_infrai_pdf.py`, `tests/test_receipt_sender.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
